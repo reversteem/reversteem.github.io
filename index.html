@@ -1,1 +1,15 @@
+<head>
 Official site of Reversi On Steem
+</head>
+<body>
+<script>
+if(window.steem_keychain) {
+    alert('Steem Keychain extension installed...')
+	steem_keychain.requestHandshake(function() {
+		console.log('Handshake received!');
+	});
+} else {
+    alert('Steem Keychain extension not installed...')
+}
+</script>
+</body>
