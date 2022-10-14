@@ -1,9 +1,10 @@
+<html>
 <head>
-Official site of Reversi On Steem
+<title>Official site of Reversi On Steem</titletitle>
 </head>
 <body>
 <script>
-if(window.steem_keychain) {
+if(!!window.steem_keychain) {
     alert('Steem Keychain extension installed...')
 	steem_keychain.requestHandshake(function() {
 		console.log('Handshake received!');
@@ -13,3 +14,4 @@ if(window.steem_keychain) {
 }
 </script>
 </body>
+</html>
